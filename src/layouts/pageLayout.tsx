@@ -28,7 +28,7 @@ const Component: LayoutComponent = ({ config }) => {
   const title = config.Title;
   const subTitle = config["Subtitle"];
 
-  const logoSize = !!subTitle ? 150 : 240;
+  const logoSize = !!subTitle ? 240 : 240;
 
   return (
     <div>

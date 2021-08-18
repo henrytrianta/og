@@ -56,7 +56,11 @@ export const Logo: React.FC<{
   style?: React.CSSProperties;
 }> = ({ config, style }) => {
   // const theme = gString(config, "Theme", defaultTheme).toLowerCase();
-  const logo = "https://og.nest.land/logo/512px.png";
+  const theme = gString(config, "Theme", defaultTheme).toLowerCase();
+  const logo =
+    theme === "dark"
+      ? "https://res.cloudinary.com/kesato/image/upload/v1629286929/SS%20Community/logo-white_sdlucz.svg"
+      : "https://res.cloudinary.com/kesato/image/upload/v1629286767/SS%20Community/logo-dark_cbbkh9.svg";
 
   return (
     <img
